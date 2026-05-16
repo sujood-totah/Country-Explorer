@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Country Explorer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="header-actions">
+      <h1 id="app-title">Country Explorer</h1>
+      <button type="button" id="theme-toggle" class="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">🌙</button>
+    </div>
+
+    <div class="search-section" id="search-section-wrap">
+      <div class="search-row">
+        <div class="search-input-wrap">
+          <input
+            type="text"
+            id="country-input"
+            placeholder="Enter a country name"
+            autocomplete="off"
+          />
+          <section class="recent-searches-section" id="recent-searches-section">
+            <div class="recent-header">
+              <h3 id="recent-searches-title">Recent Searches</h3>
+            </div>
+            <div id="recent-searches-list" class="recent-searches-list"></div>
+          </section>
+        </div>
+        <button id="search-btn">Search</button>
+      </div>
+    </div>
+
+    <div id="results"></div>
+
+    <section class="favorites-section" id="favorites-section">
+      <h3 id="favorites-title">Favorites</h3>
+      <div id="favorites-list" class="favorites-list"></div>
+    </section>
+
+    <button id="personal-details-btn" class="personal-details-btn">
+      Personal Details
+    </button>
+  </div>
+
+  <div id="personalModal" class="modal hidden" aria-hidden="true">
+    <div class="modal-content">
+      <span id="closeModal" class="close" title="Close">&times;</span>
+      <h2>Personal Details</h2>
+      <p><strong>First Name:</strong> Sujood </p>
+      <p><strong>Last Name:</strong> Totah</p>
+      <p><strong>ID:</strong> 214018442</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
